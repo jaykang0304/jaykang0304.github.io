@@ -1,0 +1,37 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 왼쪽 귀 -->
+  <ellipse cx="25" cy="30" rx="15" ry="20" fill="#8B5A2B" />
+  <ellipse cx="25" cy="32" rx="10" ry="14" fill="#D4A574" />
+  
+  <!-- 오른쪽 귀 -->
+  <ellipse cx="75" cy="30" rx="15" ry="20" fill="#8B5A2B" />
+  <ellipse cx="75" cy="32" rx="10" ry="14" fill="#D4A574" />
+  
+  <!-- 얼굴 -->
+  <circle cx="50" cy="55" r="35" fill="#8B5A2B" />
+  
+  <!-- 얼굴 하이라이트 -->
+  <ellipse cx="50" cy="50" rx="25" ry="20" fill="#C4956A" />
+  
+  <!-- 주둥이 영역 -->
+  <ellipse cx="50" cy="68" rx="18" ry="14" fill="#D4A574" />
+  
+  <!-- 왼쪽 눈 -->
+  <ellipse cx="38" cy="50" rx="6" ry="7" fill="#2D2419" />
+  <circle cx="36" cy="48" r="2" fill="white" />
+  
+  <!-- 오른쪽 눈 -->
+  <ellipse cx="62" cy="50" rx="6" ry="7" fill="#2D2419" />
+  <circle cx="60" cy="48" r="2" fill="white" />
+  
+  <!-- 코 -->
+  <ellipse cx="50" cy="62" rx="6" ry="5" fill="#2D2419" />
+  <ellipse cx="49" cy="61" rx="2" ry="1.5" fill="#4A4A4A" />
+  
+  <!-- 입 -->
+  <path d="M44 70 Q50 76 56 70" stroke="#2D2419" stroke-width="2" stroke-linecap="round" fill="none"/>
+  
+  <!-- 혀 -->
+  <ellipse cx="50" cy="76" rx="4" ry="5" fill="#E88B8B" />
+</svg>
+
