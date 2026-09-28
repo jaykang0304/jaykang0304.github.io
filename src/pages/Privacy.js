@@ -10,6 +10,11 @@ const fadeIn = {
 
 const Privacy = ({ language }) => {
   const t = translations[language].privacy;
+  const coinCoinNotice = {
+    ko: '코인코인은 게임 전용 개인정보처리방침을 확인해 주세요.',
+    en: 'For Coin Coin, please read the game-specific privacy policy.',
+    ja: 'コインコインにはゲーム専用のプライバシーポリシーをご確認ください。'
+  };
 
   return (
     <div className="privacy-page">
@@ -34,6 +39,9 @@ const Privacy = ({ language }) => {
 
       <section className="privacy-content section">
         <div className="container container-narrow">
+          <p className="privacy-box">
+            <a href="/coincoin-privacy.html">{coinCoinNotice[language] || coinCoinNotice.en}</a>
+          </p>
           <motion.article 
             className="privacy-article"
             initial="hidden"
