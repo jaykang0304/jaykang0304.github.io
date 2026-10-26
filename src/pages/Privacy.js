@@ -1,117 +1,54 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { translations } from '../i18n/translations';
 import './Privacy.css';
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
+const notices = {
+  ko: {
+    scope: 'Bogle Studio는 앱별로 개인정보 처리 항목과 이용 목적을 안내합니다. 사용하는 앱의 방침을 확인해 주세요.',
+    sawit: '쏘잇 (SawIt) — 알림 보관, 광고 및 분석',
+    coincoin: '코인코인 (Coin Coin) — 게임 전용 개인정보처리방침',
+    contact: '개인정보 관련 문의',
+  },
+  en: {
+    scope: 'Bogle Studio explains data handling separately for each app. Please read the policy for the app you use.',
+    sawit: 'SawIt — notification archive, advertising, and analytics',
+    coincoin: 'Coin Coin — game-specific privacy policy',
+    contact: 'Privacy questions',
+  },
+  ja: {
+    scope: 'Bogle Studioはアプリごとにデータの取り扱いをご案内しています。ご利用のアプリの方針をご確認ください。',
+    sawit: 'SawIt — 通知の保存、広告、分析（韓国語・英語）',
+    coincoin: 'Coin Coin — ゲーム専用プライバシーポリシー',
+    contact: 'プライバシーに関するお問い合わせ',
+  },
 };
 
 const Privacy = ({ language }) => {
-  const t = translations[language].privacy;
-  const coinCoinNotice = {
-    ko: '코인코인은 게임 전용 개인정보처리방침을 확인해 주세요.',
-    en: 'For Coin Coin, please read the game-specific privacy policy.',
-    ja: 'コインコインにはゲーム専用のプライバシーポリシーをご確認ください。'
-  };
+  const t = notices[language] || notices.en;
+  const title = (translations[language] || translations.en).privacy.title;
 
   return (
     <div className="privacy-page">
       <section className="privacy-hero">
         <div className="container container-narrow">
-          <motion.div 
-            className="section-header"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="privacy-icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-              </svg>
-            </div>
-            <h1>{t.title}</h1>
-          </motion.div>
+          <h1>{title}</h1>
         </div>
       </section>
-
       <section className="privacy-content section">
         <div className="container container-narrow">
-          <p className="privacy-box">
-            <a href="/coincoin-privacy.html">{coinCoinNotice[language] || coinCoinNotice.en}</a>
-          </p>
-          <motion.article 
-            className="privacy-article"
-            initial="hidden"
-            animate="visible"
-            variants={{
-              visible: {
-                transition: { staggerChildren: 0.1 }
-              }
-            }}
-          >
-            <motion.div className="privacy-section" variants={fadeIn}>
-              <p>{t.intro1}</p>
-              <p>{t.intro2}</p>
-            </motion.div>
-
-            <motion.div className="privacy-section" variants={fadeIn}>
-              <h2>{t.dataCollection}</h2>
-              <p>{t.dataIntro}</p>
+          <article className="privacy-article">
+            <div className="privacy-section">
+              <p>{t.scope}</p>
               <ul className="privacy-list highlight">
-                <li><strong>Firebase Crashlytics</strong>: {t.crashlytics}</li>
-                <li><strong>Firebase Analytics</strong>: {t.analytics}</li>
+                <li><a href="/sawit-privacy.html">{t.sawit}</a></li>
+                <li><a href="/coincoin-privacy.html">{t.coincoin}</a></li>
               </ul>
-              
-              <div className="privacy-box warning">
-                <h4>{t.notCollected}</h4>
-                <ul className="privacy-list">
-                  <li>{t.noPersonalInfo}</li>
-                  <li>{t.noLocation}</li>
-                  <li>{t.noContacts}</li>
-                  <li>{t.noMedia}</li>
-                </ul>
-              </div>
-              
-              <p>{t.usagePurpose}</p>
-              <ul className="privacy-list">
-                <li>{t.stability}</li>
-                <li>{t.improvement}</li>
-                <li>{t.quality}</li>
-              </ul>
-            </motion.div>
-
-            <motion.div className="privacy-section" variants={fadeIn}>
-              <h2>{t.childrenPrivacy}</h2>
-              <p>{t.childrenText}</p>
-            </motion.div>
-
-            <motion.div className="privacy-section" variants={fadeIn}>
-              <h2>{t.dataStorage}</h2>
-              <p>{t.storageText1}</p>
-              <p>{t.storageText2}</p>
-            </motion.div>
-
-            <motion.div className="privacy-section" variants={fadeIn}>
-              <h2>{t.policyChanges}</h2>
-              <p>{t.changesText1}</p>
-              <p>{t.changesText2}</p>
-              <p>{t.changesText3}</p>
-            </motion.div>
-
-            <motion.div className="privacy-section contact-section" variants={fadeIn}>
+            </div>
+            <div className="privacy-section">
               <h2>{t.contact}</h2>
-              <p>{t.contactText}</p>
-              <div className="contact-box">
-                <span className="contact-label">{t.email}</span>
-                <a href="mailto:jaykang0304@gmail.com" className="contact-email">
-                  jaykang0304@gmail.com
-                </a>
-              </div>
-            </motion.div>
-          </motion.article>
+              <a href="mailto:jaykang0304@gmail.com">jaykang0304@gmail.com</a>
+            </div>
+          </article>
         </div>
       </section>
     </div>
@@ -119,4 +56,3 @@ const Privacy = ({ language }) => {
 };
 
 export default Privacy;
-
