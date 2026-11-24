@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="친구 택시(Buddy Taxi)의 위치 사용, 기기에만 저장되는 친구 장부, Google 지도와 Google AdMob 광고에 관한 개인정보처리방침입니다.">
+<title>친구 택시 Buddy Taxi · 개인정보처리방침 | Bogle Studio</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;color:#2d2419;background:#fdfbf8}*{box-sizing:border-box}body{margin:0;line-height:1.8}header,main,footer{max-width:880px;margin:auto;padding:28px}header,footer{border-top:1px solid #e8e0d5}a{color:#754316;text-underline-offset:4px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #754316;outline-offset:5px}nav{display:flex;gap:24px;flex-wrap:wrap}nav a{min-height:44px;display:inline-flex;align-items:center}h1{font-size:clamp(28px,5vw,42px);line-height:1.25;margin:24px 0 12px}h2{font-size:23px;line-height:1.45;margin-top:38px}p,li{overflow-wrap:anywhere}.meta{color:#6b5b4f}.scope{padding:20px;background:white;border:1px solid #e8e0d5;border-radius:12px}section[lang=en]{border-top:1px solid #e8e0d5;margin-top:64px;padding-top:24px}footer{font-size:14px}@media(max-width:520px){header,main,footer{padding:20px}h2{font-size:21px}}
+</style>
+</head>
+<body>
+<header><strong>Bogle Studio</strong><nav aria-label="페이지 탐색"><a href="/">스튜디오 홈</a><a href="/privacy/">앱별 방침</a><a href="#ko">한국어</a><a href="#en" lang="en">English</a><a href="#delete">삭제</a><a href="mailto:jaykang0304@gmail.com">문의 / Contact</a></nav></header>
+<main>
+<section id="ko" lang="ko">
+<h1>친구 택시 개인정보처리방침</h1>
+<p class="meta">친구 택시 (Buddy Taxi) · Android: com.boglestudio.buddymeter<br>시행일: 2026년 11월 24일</p>
+<p class="scope">이 방침은 Bogle Studio가 제공하는 친구 택시에 적용됩니다. 친구 택시는 친구 차에서 재미로 켜는 장난 택시 미터로, 실제 택시 요금이나 결제와 관계가 없습니다. 회원 가입이 없고, Bogle Studio는 이 앱을 위한 서버를 운영하지 않습니다. 다른 Bogle Studio 앱에는 각 앱의 방침이 적용됩니다.</p>
+<h2>1. 위치 정보</h2>
+<p>사용자가 앱에서 "출발"을 눌러 운행을 시작하면, 그 운행이 끝날 때까지 휴대폰의 정밀 위치(GPS)를 약 1초 간격으로 사용합니다. 운행 중에는 화면이 꺼지거나 다른 앱을 쓰는 동안에도 측정이 이어지도록 알림이 표시되는 포그라운드 서비스를 사용하며, "도착"을 누르면 즉시 멈춥니다. 백그라운드 위치 권한은 요청하지 않습니다.</p>
+<p>위치는 기기 안에서 이동 거리·속도에 따른 장난 요금 계산과 주행 지도에 지나온 길을 그리는 데만 사용합니다. 운행을 시작할 때 지도를 띄울 위치를 정하려고 휴대폰이 이미 알고 있는 마지막 위치를 읽을 수 있습니다. 앱은 좌표나 경로를 저장하지 않으며(지나온 길은 운행 중 메모리에만 있다가 운행이 끝나면 사라집니다), Bogle Studio의 서버나 광고 SDK로 보내지 않습니다.</p>
+<p>앱이 강제로 종료되어도 운행을 이어갈 수 있도록 요금 계산용 숫자(경과 시간, 거리, 요금 단계, 통화)를 기기에 저장합니다. 여기에는 좌표나 시각이 들어 있지 않으며, 새 운행을 시작하거나 휴대폰을 재부팅하면 지워집니다. 위치 권한을 거부해도 시간 요금만으로 앱을 사용할 수 있습니다.</p>
+<h2>2. 친구 장부 (기기에만 저장)</h2>
+<p>영수증에서 "비용 기억해두기"를 누르면 사용자가 입력한 친구 이름과 함께 그 운행의 장난 요금, 통화, 날짜, 운행 시간, 이동 거리, 할증 여부가 기기 안의 파일에 저장됩니다. 탑승 분석은 이 기록만으로 기기에서 계산합니다. 장소·좌표·시각은 저장하지 않습니다. 이 기록은 휴대폰 밖으로 보내지 않으며, 사용자가 "공유"를 눌러 직접 보내는 경우에만 사용자가 고른 앱으로 전달됩니다. 친구 이름을 입력할 때 그 친구에 관한 다른 정보는 받지 않습니다.</p>
+<h2>3. Google 지도</h2>
+<p>주행 화면의 지도는 Google Maps SDK for Android로 그립니다. 지도를 보여 주기 위해 화면에 보이는 지역의 지도 데이터를 Google에서 받아오므로, 그 과정에서 Google은 해당 지역 정보와 함께 IP 주소, 요청 정보, SDK 진단 정보 등을 처리할 수 있습니다. 처리 내용은 <a href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure">Google Maps SDK 데이터 공개</a>와 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</p>
+<h2>4. Google AdMob 광고와 동의</h2>
+<p>친구 택시는 Google AdMob으로 광고를 표시합니다: 주행 화면의 네이티브 광고, 새 운행 시작 시 전면 광고, 사용자가 직접 선택하면 탑승 분석을 여는 보상형 광고. 광고 SDK는 광고 제공·측정, 분석, 진단과 부정행위 방지를 위해 IP 주소, 앱 실행·광고 조회·탭 같은 상호작용, 앱·SDK 진단 정보, 광고 ID와 App Set ID 같은 기기 식별자를 자동으로 수집하고 Google 및 광고 파트너와 공유할 수 있습니다(<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK 데이터 공개</a>). IP 주소는 대략적인 위치 추정에 사용될 수 있습니다. 앱은 GPS 위치를 광고 SDK에 넘기지 않습니다.</p>
+<p>유럽경제지역·영국·스위스 등 동의가 필요한 지역에서는 Google의 동의 메시지(User Messaging Platform)로 광고 관련 선택을 받으며, 앱 정보 화면의 "광고 개인정보 설정"에서 선택을 바꿀 수 있습니다. Android 설정에서 광고 ID를 삭제하거나 재설정할 수 있습니다. 이 조치가 IP 주소나 진단 정보 등 모든 SDK 처리를 멈추는 것은 아닙니다. 친구 택시는 Firebase 등 별도의 분석 SDK를 사용하지 않습니다.</p>
+<h2>5. 알림</h2>
+<p>알림 권한을 허용하면 운행 중 요금과 경과 시간, "도착" 버튼을 알림으로 보여 주고, 운행이 끝나면 영수증 알림을 표시합니다. 알림을 위해 추가로 수집하는 정보는 없습니다.</p>
+<h2 id="delete">6. 보관, 삭제, 백업</h2>
+<p>친구 장부의 기록은 앱의 장부 화면에서 하나씩 삭제하거나 "정산 완료"로 친구별로 비울 수 있습니다. Android 설정에서 앱의 저장공간을 지우거나 앱을 삭제하면 기기에 저장된 모든 데이터(친구 장부, 설정, 진행 중 운행)가 지워집니다. 친구 택시는 Android 클라우드 백업과 기기 간 데이터 이전을 사용하지 않으므로, 휴대폰을 바꾸면 기록이 옮겨지지 않습니다.</p>
+<p>앱에서의 삭제는 기기의 데이터를 대상으로 하며 Google 지도·광고 서버에서 이미 처리된 데이터를 지우지는 않습니다. 해당 데이터의 보관은 Google의 정책과 설정을 따릅니다. SDK 데이터 관련 문의는 아래 이메일로 받을 수 있지만, 모든 SDK 데이터의 즉시 또는 완전 삭제를 보장하지는 않습니다.</p>
+<h2>7. 국외 처리와 보안</h2>
+<p>Google 지도와 AdMob이 처리하는 정보는 Google 등 제공자의 서버로 전송되어 국외를 포함한 제공자의 환경에서 처리될 수 있으며, Google의 공식 SDK는 전송 중 TLS(HTTPS) 암호화를 사용합니다. 기기에 저장된 앱 데이터는 앱 자체에서 별도로 암호화하지 않으므로 기기 잠금과 운영체제 보안 설정을 유지해 주세요.</p>
+<h2>8. 어린이, 문의와 변경 안내</h2>
+<p>친구 택시는 13세 이상 이용자를 대상으로 하며 13세 미만 어린이를 대상으로 제공하지 않습니다. 개인정보, 삭제 요청, 어린이의 개인정보에 관한 우려가 있으면 <a href="mailto:jaykang0304@gmail.com">jaykang0304@gmail.com</a>으로 문의해 주세요. 문의 메일의 주소와 내용은 답변과 요청 처리에만 사용하며 처리에 필요한 기간 동안 보관할 수 있습니다. 방침이 바뀌면 이 페이지의 시행일과 내용을 갱신하고, 필요하면 앱에서 안내합니다.</p>
+</section>
+<section id="en" lang="en">
+<h1>Buddy Taxi Privacy Policy</h1>
+<p class="meta">Buddy Taxi (친구 택시) · Android: com.boglestudio.buddymeter · Effective November 24, 2026</p>
+<p class="scope">This policy applies to Buddy Taxi, provided by Bogle Studio: a joke taxi meter to run in a friend's car. It has nothing to do with real taxi fares or payments. There is no account, and Bogle Studio runs no server for this app. Other Bogle Studio apps have their own policies.</p>
+<h2>1. Location</h2>
+<p>When you start a ride by tapping "Start", the app uses your phone's precise location (GPS) about once per second until the ride ends. During a ride it uses a foreground service with a visible notification so measuring continues while the screen is off or another app is in front; tapping "Arrive" stops it immediately. The app does not request background-location permission.</p>
+<p>Location is used on your device only to calculate the pretend distance-and-time fare and speed, and to draw the route on the ride map. When a ride starts, the app may read the last location your phone already knows, to decide where to open the map. The app does not store coordinates or the route (the route lives in memory during the ride and is gone when it ends), and it does not send them to Bogle Studio or to the advertising SDK.</p>
+<p>So that an interrupted ride can continue, the app saves the fare counters (elapsed time, distance, fare steps, currency) on the device. They contain no coordinates or clock times and are deleted when a new ride starts or the phone restarts. You can use the app with a time-only fare if you deny location permission.</p>
+<h2>2. Friends' tab (stored on your device only)</h2>
+<p>When you tap "Remember fare" on a receipt, the friend names you type are saved in a file on your device together with that ride's pretend fare, currency, date, duration, distance and whether the extra surcharge applied. Ride stats are calculated on the device from these records only. No places, coordinates or clock times are saved. These records never leave your phone unless you tap "Share" to send them to an app you choose. The app asks for nothing else about the friends you name.</p>
+<h2>3. Google Maps</h2>
+<p>The ride map is drawn with the Google Maps SDK for Android. To show it, the app downloads map data for the area on screen from Google, so Google may process that area along with the IP address, request information and SDK diagnostics. See the <a href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure">Google Maps SDK data disclosure</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<h2>4. Google AdMob advertising and consent</h2>
+<p>Buddy Taxi shows ads from Google AdMob: a native ad on the ride screen, an interstitial ad when a new ride starts, and, only if you choose it, a rewarded ad that unlocks the ride stats. For ad delivery and measurement, analytics, diagnostics and fraud prevention, the advertising SDK automatically collects and may share with Google and advertising partners the IP address, interactions such as app launches and ad views or taps, app and SDK diagnostics, and device identifiers such as the advertising ID and App Set ID (<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>). An IP address may be used to estimate approximate location. The app never passes GPS location to the advertising SDK.</p>
+<p>In regions that require consent, such as the EEA, the UK and Switzerland, Google's consent message (User Messaging Platform) collects your advertising choices, and you can change them under "Ad privacy settings" in the app's About screen. You can delete or reset the advertising ID in Android settings; this does not stop every form of SDK processing, such as IP addresses or diagnostics. Buddy Taxi uses no separate analytics SDK such as Firebase.</p>
+<h2>5. Notifications</h2>
+<p>If you allow notifications, the app shows the fare, elapsed time and an "Arrive" button during a ride, and a receipt notification when it ends. No additional information is collected for notifications.</p>
+<h2>6. Retention, deletion and backup</h2>
+<p>You can delete friends' tab records one by one in the tab screen, or clear a friend's tab with "Settle up". Clearing the app's storage in Android settings or uninstalling the app deletes all data stored on the device (friends' tab, settings, a ride in progress). Buddy Taxi does not use Android cloud backup or device-to-device transfer, so records do not move to a new phone.</p>
+<p>Deleting data in the app affects your device only; it does not delete data already processed by Google's maps or advertising servers, which follows Google's policies and settings. You may contact us about SDK data, but immediate or complete deletion of all SDK data is not guaranteed.</p>
+<h2>7. International processing and security</h2>
+<p>Information handled by Google Maps and AdMob is sent to provider servers and may be processed outside your country. Google's official SDKs use TLS (HTTPS) encryption in transit. App data stored on the device has no separate app-level encryption, so keep your device lock and operating-system security settings enabled.</p>
+<h2>8. Children, contact and changes</h2>
+<p>Buddy Taxi is intended for users aged 13 and over and is not directed to children under 13. For questions about privacy, deletion requests, or concerns about a child's personal information, contact <a href="mailto:jaykang0304@gmail.com">jaykang0304@gmail.com</a>. We use the address and content of your email only to reply and handle your request, and may keep it as long as that requires. If this policy changes, we will update the effective date and content of this page and, where needed, tell you in the app.</p>
+</section>
+</main>
+<footer>© Bogle Studio · <a href="/privacy/">Privacy policies by app</a></footer>
+</body>
+</html>
